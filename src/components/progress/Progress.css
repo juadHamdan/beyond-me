@@ -1,0 +1,36 @@
+.progress-container{
+    z-index: 1;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.label-left{
+    flex-direction: row;
+}
+
+.label-right{
+    flex-direction: row-reverse;
+}
+
+.progress-bg{
+    border-radius: 1em;
+    width: 100%;
+}
+
+.progress{
+    border-radius: 1em;
+}
+
+.buffer-progress{
+    position: absolute;
+    border-radius: 1em;
+}
+
+.progress-container .label {
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    margin: 0 3px;
+}

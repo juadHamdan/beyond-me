@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+
+:root{
+    --image-width: 350px;
+}
+
+.card{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: max-content;
+    max-width: min-content;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+
+    font-family: "Rubik", sans-serif;
+}
+
+.card .image-container{
+    position: relative;
+}
+.card .image{
+   width: var(--image-width); 
+}
+
+.card .image:hover{
+    cursor: pointer;
+ }
+
+ .card .icon-container{
+    position: absolute;
+    bottom: 12.5px;
+
+    cursor: default;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card .icon-container:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card .like-icon{
+    right: 10px;
+}
+
+.card .cart-icon{
+    left: 10px;
+}
+
+.card .discount{
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+    
+    color:rgb(222, 0, 0);
+    font-weight: bold;
+}
+
+.card .status{
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    border-radius: 1rem 0 0 1rem;
+    padding: 5px 5px 5px 10px;
+}
+
+.card .title{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 10px 0;
+
+    max-width: var(--image-width); 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .category{
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    margin: 0 0 7.5px 0;
+
+    max-width: calc(var(--image-width) - 20px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .category:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card .current-price{
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline;
+}
+
+.card .old-price{
+    text-decoration: line-through;
+    color: rgb(222, 0, 0);
+    display: inline;
+    margin-right: 5px;
+}
+
+
+
+
+
+@media (max-width: 800px){
+    .card{
+        width: 35vw;
+    }
+    .card .image{
+        width: 35vw;
+        height: auto;
+    }
+
+    .card .title{
+        font-size: 0.8rem;
+        max-width: 100%; 
+
+        white-space: normal;
+        overflow: hidden;
+    }
+
+    .card .category{
+        font-size: 0.8rem;
+        margin: 5px;
+        padding: 2.5px 5px;
+    }
+
+    .card .old-price{
+        font-size: 0.7rem;
+    }
+
+    .card .current-price{
+        font-size: 0.8rem;
+    }
+
+    .card .status{
+        right: 0;
+        top: 5px;
+        font-size: 0.7rem;
+    }
+    .card .discount{
+        left: 0;
+        top: 30px;
+        font-size: 0.8rem; 
+    }
+
+
+    .card .icon-container{
+        bottom: 7.5px;
+        padding: 7.5px;
+    }
+
+    .card .like-icon{
+        right: 5px;
+    }
+    
+    .card .cart-icon{
+        left: 5px;
+    }
+}

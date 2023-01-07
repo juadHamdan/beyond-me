@@ -1,0 +1,27 @@
+.loading-bg {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .loading-enter {
+    opacity: 0;
+  }
+  .loading-enter-active {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+  }
+  .loading-exit {
+    opacity: 1;
+  }
+  .loading-exit-active {
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }

@@ -1,0 +1,38 @@
+.input-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: "Rubik", sans-serif;
+    background: white;
+    background-color: inherit;
+    padding: 10px;
+}
+
+.input{
+    padding: 20px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.input:hover{
+    border: 1px solid black;
+}
+
+.input-container .popper{
+    font-weight: bold;
+    padding: 3px;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    border-radius: 5px;
+    color: grey;
+}
+
+.input-container .popper-password{
+    top: -55px;
+    color: rgb(222, 0, 0);
+}

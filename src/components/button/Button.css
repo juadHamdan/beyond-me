@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 0 5px 5px;
+    font-family: "Rubik", sans-serif;
+}
+
+.btn:hover {
+    filter: brightness(85%);
+}
+
+.btn-basic {
+}
+
+.btn-text:hover {
+}
+
+.btn-outline {
+}
+
+.btn-pill {
+    border-radius: 1rem;
+    padding: 10px 20px;
+}
+
+.btn .disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+  

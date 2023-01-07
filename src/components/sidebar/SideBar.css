@@ -1,0 +1,127 @@
+.sidebar-bg {
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar {
+    text-align: center;
+    height: 100vw;
+    width: minmax(20vw, 350px);
+    cursor: default;
+    position: fixed;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px 2px rgba(0, 0, 0, 0.1);
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .sidebar .close-btn:hover {
+    opacity: 0.5;
+  }
+  
+  .sidebar .header-element{
+    padding: 10px 0 20px;
+  }
+
+  .sidebar .footer {
+    padding: 50px 0;
+    font-weight: bold;
+    color: grey;
+  }
+  
+    
+  @media (max-width: 400px) {
+    .sidebar {
+      width: 80vw;
+      height: 100vh;
+    }
+    .sidebar .header-text{
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 950px) {
+    .sidebar {
+      height: 100vh;
+    }
+    .sidebar .header-text{
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  
+  /* ----------------------- */
+  
+  .sidebar-fade-enter {
+    opacity: 0;
+  }
+  .sidebar-fade-enter-active {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+  }
+  .sidebar-fade-exit {
+    opacity: 1;
+  }
+  .sidebar-fade-exit-active {
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  /* ----------------------- */
+  
+  .sidebar-slide-left-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .sidebar-slide-left-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in-out;
+  }
+  .sidebar-slide-left-exit {
+    opacity: 1;
+  }
+  .sidebar-slide-left-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 300ms ease-in-out;
+  }
+
+    /* ----------------------- */
+
+  .sidebar-slide-right-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  .sidebar-slide-right-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in-out;
+  }
+  .sidebar-slide-right-exit {
+    opacity: 1;
+  }
+  .sidebar-slide-right-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out;
+  }
+  

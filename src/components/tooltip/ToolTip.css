@@ -1,0 +1,49 @@
+.tooltip{
+    width: max-content;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px;
+    font-family: "Rubik", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+  /* ----------------------- */
+  
+  .tooltip-scale-enter {
+    opacity: 0;
+    transform: scale(2);
+  }
+  .tooltip-scale-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in-out;
+  }
+  .tooltip-scale-exit {
+    opacity: 1;
+  }
+  .tooltip-scale-exit-active {
+    opacity: 0;
+    transform: scale(2);
+    transition: all 300ms ease-in-out;
+  }
+
+  /* ----------------------- */
+
+  .tooltip-fade-enter {
+    opacity: 0;
+  }
+  .tooltip-fade-enter-active {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+  }
+  .tooltip-fade-exit {
+    opacity: 1;
+  }
+  .tooltip-fade-exit-active {
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  /* ----------------------- */
